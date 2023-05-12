@@ -5,7 +5,7 @@ api = Blueprint('api', __name__, url_prefix='/api')
 
 
 
-@api.get('/product')
+@api.get('/products')
 def getProduct():
     product = Product.query.all()
     productlist = [p.to_dict() for p in product]

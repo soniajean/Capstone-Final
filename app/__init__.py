@@ -4,6 +4,7 @@ from config import Config
 from .auth.routes import auth
 from .payments.routes import payments
 from .cart.routes import cart
+from .shop.routes import shop
 from .api.routes import api
 
 from .models import db, User, Product
@@ -31,5 +32,7 @@ app.register_blueprint(auth)
 app.register_blueprint(payments)
 app.register_blueprint(cart)
 app.register_blueprint(api)
+app.register_blueprint(shop)
+
 
 from . import routes
