@@ -5,7 +5,7 @@ import json
 
 payments = Blueprint('payments', __name__, url_prefix='/pay')
 
-stripe.api_key = os.environ.get('STRIPE_API_KEY')
+stripe.api_key = os.environ.get('sk_test_51N1wQUHVXK2z2vrpPDPNCrT0yHB9Dvdhs1ZA8zkKiNobPJRXjg2NYbaLuggMW90FE0IKXrTE377ZTK3wjNCzIBky003V2gkAhU')
 
 def check_total(cart):
     """
