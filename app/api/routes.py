@@ -1,4 +1,5 @@
 from flask import Blueprint, request
+from flask_cors import cross_origin
 from ..models import Product
 
 api = Blueprint('api', __name__, url_prefix='/api')
@@ -6,9 +7,11 @@ api = Blueprint('api', __name__, url_prefix='/api')
 
 
 @api.get('/products')
+@cross_origin()
 def getProduct():
     product = Product.query.all()
     productlist = [p.to_dict() for p in product]
+    print (productlist)
     return {
         'status': 'ok',
         'data': productlist

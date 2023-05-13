@@ -13,6 +13,7 @@ from flask_login import LoginManager
 from flask_cors import CORS
 
 app = Flask(__name__)
+app.config.from_object(Config)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 login = LoginManager()
@@ -20,7 +21,7 @@ login = LoginManager()
 def load_user(user_id):
     return User.query.get(user_id)
 
-app.config.from_object(Config)
+
 
 db.init_app(app)
 migrate = Migrate(app, db)
