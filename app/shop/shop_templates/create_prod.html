@@ -15,14 +15,12 @@
         <form method="POST" class='col-6'>
             {{ form.hidden_tag() }}
 
-            {{ form.make(class='form-control', placeholder='Make') }}
-            {{ form.model(class='form-control', placeholder='Model') }}
-            {{ form.year(class='form-control', placeholder='Year') }}
-            {{ form.miles(class='form-control', placeholder='Miles') }}
-            {{ form.desc(class='form-control', placeholder='Description') }}
-            {{ form.name(class='form-control', placeholder='Name') }}
-            {{ form.img_url(class='form-control', placeholder='img_url') }}
+            {{ form.id(class='form-control', placeholder='id') }}
+            {{ form.title(class='form-control', placeholder='title') }}
             {{ form.price(class='form-control', placeholder='price') }}
+            {{ form.description(class='form-control', placeholder='Description') }}
+            {{ form.category(class='form-control', placeholder='category') }}
+            {{ form.img_url(class='form-control', placeholder='img_url') }}
             {{ form.submit(class='btn btn-primary', placeholder='Create Product!') }}
         </form>
         

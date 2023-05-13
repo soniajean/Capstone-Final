@@ -4,8 +4,8 @@
             "previewLimit": 50,
             "server": "localhost",
             "driver": "PostgreSQL",
-            "name": "capstone",
-            "connectString": "postgres://bzxfynlg:9XCC9hf1ZFVWaLQ4uZsGV1MkyVCmcOw5@ruby.db.elephantsql.com/bzxfynlg"
+            "name": "final",
+            "connectString": "postgresql://uiwjubmm:7DnfhW1QMN7OKD38G4JpuEZLfhXNTjRo@drona.db.elephantsql.com/uiwjubmm"
         }
     ]
 }
